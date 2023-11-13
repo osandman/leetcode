@@ -2,9 +2,9 @@ package net.osandman.n1845_Seat_Reservation_Manager;
 
 import java.util.PriorityQueue;
 
-public class SeatManagerPriorityQueue implements ISeatManager {
+public class PriorityQueueSeatManager implements SeatManager {
     PriorityQueue<Integer> seats;
-    public SeatManagerPriorityQueue(int n) {
+    public PriorityQueueSeatManager(int n) {
         seats = new PriorityQueue<>(n);
         for (int i = 1; i <= n; i++) {
             seats.offer(i);
